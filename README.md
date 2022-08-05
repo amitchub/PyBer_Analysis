@@ -7,7 +7,7 @@ Applying Python and Pandas, a summary DataFrame of the ride-sharing data by city
 
 ---
 
-## Analysis
+## Results and Analysis
 
 Please refer to the following table:
 
@@ -17,27 +17,20 @@ Please refer to the following table:
 |Suburban|625|490|$19,356.33|$30.97|$39.50|
 |Urban|1625|2405|$39,854.38|$24.53|$16.57|
 
-![PyBer Fare Summary](analysis/PyBer_fare_summary.png.png)
+As one would expect, as the population density declines, the amount of rides decreases.  Personal vehicle ownership increases as one moves from higher population densities to lower population densities.
 
-- The gross amount of launches generally ramp up from January through May, and then begin a decline from there.
-- Failed launches remain relatively flat with respect to Successful launches.
-- Two thirds of the data is culled from the United States alone for Theater Kickstarter campaigns.  The trendlines of just US data matches that of the whole dataset.  One theory as to why Successful launches peak in May is that many small dollar donors receive their IRS tax refund checks in this timeframe, and have more disposable income than at other times of the year.
-- One other theory as to why all launches decline in Q4 is that small dollar donors are saving up to purchase gifts for the holidays.
+Another interesting item to note: The Average Fare per Ride and Average Fare per Driver have an inverse relationship to city type.  As the population density increases, the average fares decrease.
+
+Please refer to the following chart:
+
+![PyBer Fare Summary](analysis/PyBer_fare_summary.png)
+
+Generally speaking, Urban usage of ride-sharing dwarfs that of Rural and Suburban ride-sharing.
 ---
 
 ## Results
 
-### Outcomes Based on Launch Date
-1. Launching a campaign in the April-June timeframe is the most advantageous for garnering funding.
-2. The smallest chance to have a failed campaign is in the November-December timeframe.
-
-### Outcomes Based on Goals
-1. Significant success can be found in setting a modest goal (less than $15,000) for funding.
-2. Failure of funding rises precipitously as goal amount increases.
-
-### Limitations of the dataset
-- Clearly, not having more current data may skew the numbers.  Having just come out the other side of a global pandemic, spending habits for small dollar donors may have changed.
-- Different genres of plays / musicals / etc. would be helpful, allowing us to drill down even further to reach conclusions about different types of live performances.
-
-### Data or Tables that should be added
-- One enhancement to the Outcomes Based on Goals should be a weight given to the amount of data in the lower ranges.  Over 90% of all goals were under $15,000, so making sweeping conclusions about more expensive or ambitious plays is difficult.
+We recommend the following to address disparities among city types:
+- Advertise to prospective rural community drivers that their fares are significantly higher than those of their peers in 'The Big City', so there's money to be made!
+- Incentivize Urban (and Suburban) drivers to service Rural areas, due to the generally more-lucrative fares.  This will, in turn, make customers in Rural areas more inclined to use the service.
+- Incentivize prospective customers using the app to share their ride with other customers.  While this may increase the amount of time for some people, it will drive down the cost to the customer, while simultaneously increasing the Average Fare per Driver, by virtue of having multiple customers serviced at once.
